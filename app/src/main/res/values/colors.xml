@@ -5,4 +5,9 @@
     <color name="colorAccent">#FF4081</color>
     <color name="text_color_white">#FFFFFF</color>
     <color name="red">#FF0000</color>
+    <color name="black">#000000</color>
+
+    <color name="toolbar_item_background">#A4F5F6</color>
+    <color name="divider">@android:color/darker_gray</color>
+
 </resources>

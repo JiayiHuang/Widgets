@@ -4,4 +4,6 @@
     <string name="more">更多</string>
     <string name="toolbar_message">Toolbar 消息</string>
     <string name="toolbar_close">Toolbar 关闭</string>
+    <string name="custom">Custom</string>
+    <string name="official">official</string>
 </resources>

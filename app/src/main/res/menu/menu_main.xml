@@ -3,27 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/menu_message"
-        android:icon="@drawable/ic_message_black_24dp"
+        android:id="@+id/menu_main_custom"
         android:orderInCategory="1"
-        android:title="@string/toolbar_message"
-        app:showAsAction="ifRoom" />
-    <!--app:actionLayout="@layout/toolbar_menu_msg"-->
-    <item
-        android:id="@+id/menu_refresh"
-        android:icon="@drawable/ic_refresh_black_24dp"
-        android:orderInCategory="1"
-        android:title="@string/toolbar_refresh"
+        android:title="@string/custom"
         app:showAsAction="never" />
     <item
-        android:id="@+id/menu_more"
+        android:id="@+id/menu_main_official"
         android:orderInCategory="2"
-        android:title="@string/more"
-        app:showAsAction="never" />
-    <item
-        android:id="@+id/menu_close"
-        android:icon="@drawable/ic_close_24dp"
-        android:orderInCategory="1"
-        android:title="@string/toolbar_close"
+        android:title="@string/official"
         app:showAsAction="never" />
 </menu>

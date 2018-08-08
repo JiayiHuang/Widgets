@@ -6,6 +6,30 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <!--系统点击效果的颜色 selectedItem-->
+        <item name="colorControlHighlight">@color/colorAccent</item>
+
+        <!--设置每个菜单项及它选中时的背景色-->
+        <item name="android:itemBackground">@drawable/selector_toolbar_overflow_item_bg</item>
+
+        <!--下面3行是ToolBar的状态栏沉浸效果-->
+        <!--<item name="android:windowTranslucentStatus">false</item>-->
+        <!--<item name="android:windowTranslucentNavigation">true</item>-->
+        <!--<item name="android:statusBarColor">#0176da</item>-->
+
+        <!-- Toolbar风格 -->
+        <!--<item name="toolbarStyle">@style/Theme.Toolbar.App.Style</item>-->
+
+        <!--溢出菜单中的action间的分割线-->
+        <item name="android:dividerHeight">1dp</item>
+        <!--文本大小-->
+        <item name="android:textSize">20sp</item>
+        <!--文本颜色-->
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <!--设置菜单不遮挡actionbar-->
+        <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle</item>
+        <!--配置Menu的图标-->
+        <item name="actionOverflowButtonStyle">@style/ToolBar.ActionButton.Overflow</item>
     </style>
 
 </resources>

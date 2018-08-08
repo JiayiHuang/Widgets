@@ -1,29 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-
     <item
-        android:id="@+id/menu_toolbar_message"
+        android:id="@+id/menu_toolbar2_message"
         android:icon="@drawable/toolbar_msg_with_red"
         android:orderInCategory="1"
         android:title="@string/toolbar_message"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="always" />
     <!--app:actionLayout="@layout/toolbar_menu_msg"-->
     <item
-        android:id="@+id/menu_toolbar_refresh"
+        android:id="@+id/menu_toolbar2_refresh"
         android:icon="@drawable/ic_refresh_black_24dp"
         android:orderInCategory="1"
         android:title="@string/toolbar_refresh"
-        app:showAsAction="never" />
+        app:showAsAction="always" />
     <item
-        android:id="@+id/menu_toolbar_more"
+        android:id="@+id/menu_toolbar2_more"
         android:orderInCategory="2"
         android:title="@string/more"
-        app:showAsAction="never" />
+        app:showAsAction="always" />
     <item
-        android:id="@+id/menu_toolbar_close"
+        android:id="@+id/menu_toolbar2_close"
         android:icon="@drawable/ic_close_24dp"
         android:orderInCategory="1"
         android:title="@string/toolbar_close"
-        app:showAsAction="never" />
+        app:showAsAction="always" />
 </menu>

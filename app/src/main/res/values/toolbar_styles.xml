@@ -1,0 +1,95 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="Toolbar.BaseAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!--设置每个菜单项及它选中时的背景色-->
+        <item name="android:itemBackground">#a4f5f6</item>
+        <!--<item name="android:background">#303F9F</item>-->
+
+        <!--下面3行是ToolBar的状态栏沉浸效果-->
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:statusBarColor">#0176da</item>
+
+        <!-- Toolbar风格 -->
+        <item name="toolbarStyle">@style/Theme.Toolbar.App.Style</item>
+
+        <!--溢出菜单中的action间的分割线-->
+        <item name="android:dividerHeight">1dp</item>
+        <!--文本大小-->
+        <item name="android:textSize">20sp</item>
+        <!--文本颜色-->
+        <item name="android:textColorPrimary">#ffffff</item>
+        <!--设置菜单不遮挡actionbar-->
+        <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle</item>
+        <!--配置Menu的图标-->
+        <item name="actionOverflowButtonStyle">@style/ToolBar.ActionButton.Overflow</item>
+    </style>
+
+
+    <!--溢出菜单样式 -->
+    <style name="OverflowMenuStyle" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
+        <!--溢出菜单的宽度-->
+        <item name="android:dropDownWidth">wrap_content</item>
+        <item name="android:paddingRight">5dp</item>
+        <!--溢出菜单窗口的背景，它与菜单项的背景不同，如果所有菜单项加一起盖住了窗口，那么这个背景色看不到-->
+        <item name="android:popupBackground">#89a81d</item>
+        <!--溢出菜单不遮挡ToolBar-->
+        <item name="overlapAnchor">false</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:overScrollMode">never</item>
+        <!--溢出菜单垂直偏移，水平偏移-->
+        <item name="android:dropDownVerticalOffset">2dip</item>
+        <item name="android:dropDownHorizontalOffset">-2dip</item>
+    </style>
+
+    <!--溢出按钮样式 -->
+    <style name="ToolBar.ActionButton.Overflow" parent="android:style/Widget.Holo.Light.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_more_horiz_24dp</item>
+    </style>
+
+
+    <!--=============下面是toolbar相关主题============-->
+    <!-- Toolbar样式 -->
+    <style name="Theme.Toolbar.App.Style" parent="@style/Widget.AppCompat.Toolbar">
+        <item name="android:background">#33B5E5</item>
+        <!--注意不要用android:titleTextAppearance,要用xmlns:app="http://schemas.android.com/apk/res-auto"下的，
+                不带前缀就是app:下的-->
+        <!--主标题-->
+        <item name="title">title</item>
+        <!--副标题-->
+        <item name="subtitle">subtitle</item>
+
+        <!--logo-->
+        <item name="logo">@android:drawable/ic_menu_call</item>
+        <!--主标题样式-->
+        <item name="titleTextAppearance">@style/Theme.ToolBar.App.Title</item>
+        <!--副标题样式-->
+        <item name="subtitleTextAppearance">@style/Theme.ToolBar.App.Subtitle</item>
+
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="titleMargins">4dp</item>
+        <!--ToolBar的Home图标左侧间隙-->
+        <item name="contentInsetStart">16dp</item>
+
+        <!--当home图标折叠时显示的图标-->
+        <item name="collapseIcon">@android:drawable/ic_menu_compass</item>
+        <item name="collapseContentDescription">collapseContentDescription</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+
+    </style>
+
+    <!--设置toolbar标题主题-->
+    <style name="Theme.ToolBar.App.Title" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <!--toolbar副标题主题-->
+    <style name="Theme.ToolBar.App.Subtitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+        <item name="android:textSize">9sp</item>
+        <item name="android:textColor">#ff0000</item>
+    </style>
+</resources>
