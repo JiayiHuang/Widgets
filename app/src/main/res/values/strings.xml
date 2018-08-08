@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">JWidgets</string>
+    <string name="toolbar_refresh">Toolbar 刷新</string>
+    <string name="more">更多</string>
+    <string name="toolbar_message">Toolbar 消息</string>
+    <string name="toolbar_close">Toolbar 关闭</string>
+</resources>

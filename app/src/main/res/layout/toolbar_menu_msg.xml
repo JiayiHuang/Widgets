@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="3dp"
+        android:src="@drawable/ic_message_black_24dp" />
+
+    <View
+        android:id="@+id/menu_msg_red_tip"
+        android:layout_width="7dp"
+        android:layout_height="7dp"
+        android:layout_gravity="right|top"
+        android:background="@drawable/shape_oval_red" />
+</FrameLayout>

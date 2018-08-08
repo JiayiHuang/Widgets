@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_message"
+        android:icon="@drawable/ic_message_black_24dp"
+        android:orderInCategory="1"
+        android:title="@string/toolbar_message"
+        app:showAsAction="ifRoom" />
+    <!--app:actionLayout="@layout/toolbar_menu_msg"-->
+    <item
+        android:id="@+id/menu_refresh"
+        android:icon="@drawable/ic_refresh_black_24dp"
+        android:orderInCategory="1"
+        android:title="@string/toolbar_refresh"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_more"
+        android:orderInCategory="2"
+        android:title="@string/more"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_close"
+        android:icon="@drawable/ic_close_24dp"
+        android:orderInCategory="1"
+        android:title="@string/toolbar_close"
+        app:showAsAction="never" />
+</menu>
