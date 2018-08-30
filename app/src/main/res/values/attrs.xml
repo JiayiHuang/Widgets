@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SlidableView">
+        <attr name="id_view_bottom" format="reference" />
+        <attr name="id_view_top" format="reference" />
+    </declare-styleable>
+</resources>

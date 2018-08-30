@@ -11,10 +11,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.jy.widgets.custom.SlidableActivity;
 import com.jy.widgets.model.ActivityBean;
+import com.jy.widgets.official.SpinnerActivity;
 import com.jy.widgets.official.ToolbarActivity;
 import com.jy.widgets.official.recycler.decoration.HorizontalDividerItemDecoration;
-import com.jy.widgets.official.spinner.SpinnerActivity;
 import com.jy.widgets.utils.ToastUtils;
 
 import java.util.ArrayList;
@@ -36,6 +37,7 @@ public class MainActivity extends BaseActivity {
     private ArrayList<ActivityBean> generateData() {
         mDataList.add(new ActivityBean("Toolbar", ToolbarActivity.class));
         mDataList.add(new ActivityBean("Spinner", SpinnerActivity.class));
+        mDataList.add(new ActivityBean("SlidableItem", SlidableActivity.class));
         return mDataList;
     }
 
@@ -50,7 +52,7 @@ public class MainActivity extends BaseActivity {
             @NonNull
             @Override
             public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-                View rootItem = LayoutInflater.from(mActivity).inflate(R.layout.item_main, parent, false);
+                View rootItem = LayoutInflater.from(mActivity).inflate(R.layout.main_item, parent, false);
                 return new RecyclerHolder(rootItem);
             }
 

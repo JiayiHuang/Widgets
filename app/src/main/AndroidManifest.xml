@@ -18,7 +18,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".official.ToolbarActivity" />
-        <activity android:name=".official.spinner.SpinnerActivity" />
+        <activity android:name=".official.SpinnerActivity" />
+        <activity android:name=".custom.SlidableActivity" />
     </application>
 
 </manifest>
