@@ -7,7 +7,7 @@
 
     <include layout="@layout/toolbar" />
 
-    <com.jy.widgets.official.recycler.XRecyclerView
+    <com.jiun.widgets.official.recycler.XRecyclerView
         android:id="@+id/main_recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

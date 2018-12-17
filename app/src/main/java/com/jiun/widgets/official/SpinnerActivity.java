@@ -1,7 +1,7 @@
-package com.jy.widgets.official;
+package com.jiun.widgets.official;
 
-import com.jy.widgets.BaseActivity;
-import com.jy.widgets.R;
+import com.jiun.widgets.BaseActivity;
+import com.jiun.widgets.R;
 
 /**
  * @author HJY

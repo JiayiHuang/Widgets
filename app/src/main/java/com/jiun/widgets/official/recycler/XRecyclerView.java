@@ -1,4 +1,4 @@
-package com.jy.widgets.official.recycler;
+package com.jiun.widgets.official.recycler;
 
 import android.content.Context;
 import android.support.annotation.Nullable;

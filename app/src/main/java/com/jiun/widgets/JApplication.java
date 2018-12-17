@@ -1,8 +1,8 @@
-package com.jy.widgets;
+package com.jiun.widgets;
 
 import android.app.Application;
 
-import com.jy.widgets.utils.ToastUtils;
+import com.jiun.widgets.utils.ToastUtils;
 
 /**
  * @author HJY

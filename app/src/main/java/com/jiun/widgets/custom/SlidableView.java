@@ -1,4 +1,4 @@
-package com.jy.widgets.custom;
+package com.jiun.widgets.custom;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -12,7 +12,7 @@ import android.view.View;
 import android.widget.HorizontalScrollView;
 import android.widget.TextView;
 
-import com.jy.widgets.R;
+import com.jiun.widgets.R;
 
 /**
  * @author HJY

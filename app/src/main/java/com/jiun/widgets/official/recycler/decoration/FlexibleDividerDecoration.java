@@ -1,4 +1,4 @@
-package com.jy.widgets.official.recycler.decoration;
+package com.jiun.widgets.official.recycler.decoration;
 
 import android.content.Context;
 import android.content.res.Resources;

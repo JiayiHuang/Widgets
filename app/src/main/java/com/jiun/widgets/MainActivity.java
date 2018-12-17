@@ -1,4 +1,4 @@
-package com.jy.widgets;
+package com.jiun.widgets;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;
@@ -11,12 +11,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.jy.widgets.custom.SlidableActivity;
-import com.jy.widgets.model.ActivityBean;
-import com.jy.widgets.official.SpinnerActivity;
-import com.jy.widgets.official.ToolbarActivity;
-import com.jy.widgets.official.recycler.decoration.HorizontalDividerItemDecoration;
-import com.jy.widgets.utils.ToastUtils;
+import com.jiun.widgets.custom.SlidableActivity;
+import com.jiun.widgets.model.ActivityBean;
+import com.jiun.widgets.official.SpinnerActivity;
+import com.jiun.widgets.official.ToolbarActivity;
+import com.jiun.widgets.official.recycler.decoration.HorizontalDividerItemDecoration;
+import com.jiun.widgets.utils.ToastUtils;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package com.jy.widgets.model;
+package com.jiun.widgets.model;
 
 /**
  * @author HJY

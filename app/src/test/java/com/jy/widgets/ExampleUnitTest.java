@@ -1,4 +1,4 @@
-package com.jy.widgets;
+package com.jiun.widgets;
 
 import org.junit.Test;
 

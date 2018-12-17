@@ -1,4 +1,4 @@
-package com.jy.widgets.custom;
+package com.jiun.widgets.custom;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -6,9 +6,9 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 
-import com.jy.widgets.BaseActivity;
-import com.jy.widgets.R;
-import com.jy.widgets.utils.ToastUtils;
+import com.jiun.widgets.BaseActivity;
+import com.jiun.widgets.R;
+import com.jiun.widgets.utils.ToastUtils;
 
 /**
  * @author jiun

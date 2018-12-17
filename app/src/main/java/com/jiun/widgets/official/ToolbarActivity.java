@@ -1,4 +1,4 @@
-package com.jy.widgets.official;
+package com.jiun.widgets.official;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -13,9 +13,9 @@ import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-import com.jy.widgets.BaseActivity;
-import com.jy.widgets.R;
-import com.jy.widgets.utils.ToastUtils;
+import com.jiun.widgets.BaseActivity;
+import com.jiun.widgets.R;
+import com.jiun.widgets.utils.ToastUtils;
 
 
 /**
