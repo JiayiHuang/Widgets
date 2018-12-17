@@ -32,4 +32,31 @@
         <item name="actionOverflowButtonStyle">@style/ToolBar.ActionButton.Overflow</item>
     </style>
 
+
+    <declare-styleable name="TextImageView">
+        <attr name="drawableAutoClickable" format="boolean" />
+        <attr name="drawableLeftWidth" format="dimension" />
+        <attr name="drawableLeftHeight" format="dimension" />
+        <attr name="drawableTopWidth" format="dimension" />
+        <attr name="drawableTopHeight" format="dimension" />
+        <attr name="drawableRightWidth" format="dimension" />
+        <attr name="drawableRightHeight" format="dimension" />
+        <attr name="drawableBottomWidth" format="dimension" />
+        <attr name="drawableBottomHeight" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="XViewPager">
+        <attr name="xvp_ratio" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="ClearableEditText">
+        <attr name="cet_drawableRight" format="reference" />
+        <attr name="cet_showAlways" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="reference|dimension" />
+        <attr name="border_color" format="color|reference" />
+    </declare-styleable>
+
+
 </resources>
