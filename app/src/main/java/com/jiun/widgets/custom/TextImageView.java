@@ -8,7 +8,7 @@ import android.support.annotation.DrawableRes;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 
-import com.anban.policemonitor.R;
+import com.jiun.widgets.R;
 
 /**
  * <pre>
@@ -117,24 +117,48 @@ public class TextImageView extends android.support.v7.widget.AppCompatTextView {
         }
     }
 
+    @SuppressLint("ResourceType")
     public void setDrawableLeft(@DrawableRes int drawableLeftResId) {
-        Drawable drawableLeft = mContext.getResources().getDrawable(drawableLeftResId);
-        setCompoundDrawables(drawableLeft, mDrawableTop, mDrawableRight, mDrawableBottom);
+        if (drawableLeftResId <= 0) {
+            setCompoundDrawables(null, mDrawableTop, mDrawableRight, mDrawableBottom);
+        } else {
+            Drawable drawableLeft = mContext.getResources().getDrawable(drawableLeftResId);
+            setDrawableBounds(drawableLeft, mLeftWidth, mLeftHeight);
+            setCompoundDrawables(drawableLeft, mDrawableTop, mDrawableRight, mDrawableBottom);
+        }
     }
 
+    @SuppressLint("ResourceType")
     public void setDrawableRight(@DrawableRes int drawableRightResId) {
-        Drawable drawableRight = mContext.getResources().getDrawable(drawableRightResId);
-        setCompoundDrawables(mDrawableLeft, mDrawableTop, drawableRight, mDrawableBottom);
+        if (drawableRightResId <= 0) {
+            setCompoundDrawables(mDrawableLeft, mDrawableTop, null, mDrawableBottom);
+        } else {
+            Drawable drawableRight = mContext.getResources().getDrawable(drawableRightResId);
+            setDrawableBounds(drawableRight, mRightWidth, mRightHeight);
+            setCompoundDrawables(mDrawableLeft, mDrawableTop, drawableRight, mDrawableBottom);
+        }
     }
 
+    @SuppressLint("ResourceType")
     public void setDrawableTop(@DrawableRes int drawableTopResId) {
-        Drawable drawableTop = mContext.getResources().getDrawable(drawableTopResId);
-        setCompoundDrawables(mDrawableLeft, drawableTop, mDrawableRight, mDrawableBottom);
+        if (drawableTopResId <= 0) {
+            setCompoundDrawables(mDrawableLeft, null, mDrawableRight, mDrawableBottom);
+        } else {
+            Drawable drawableTop = mContext.getResources().getDrawable(drawableTopResId);
+            setDrawableBounds(drawableTop, mTopWidth, mTopHeight);
+            setCompoundDrawables(mDrawableLeft, drawableTop, mDrawableRight, mDrawableBottom);
+        }
     }
 
+    @SuppressLint("ResourceType")
     public void setDrawableBottom(@DrawableRes int drawableBottomResId) {
-        Drawable drawableBottom = mContext.getResources().getDrawable(drawableBottomResId);
-        setCompoundDrawables(mDrawableLeft, mDrawableTop, mDrawableRight, drawableBottom);
+        if (drawableBottomResId <= 0) {
+            setCompoundDrawables(mDrawableLeft, mDrawableTop, mDrawableRight, null);
+        } else {
+            Drawable drawableBottom = mContext.getResources().getDrawable(drawableBottomResId);
+            setDrawableBounds(drawableBottom, mBottomWidth, mBottomHeight);
+            setCompoundDrawables(mDrawableLeft, mDrawableTop, mDrawableRight, drawableBottom);
+        }
     }
 
 
